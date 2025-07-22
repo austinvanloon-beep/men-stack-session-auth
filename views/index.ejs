@@ -7,7 +7,10 @@
   </head>
   <body>
     <% if (user) { %>
-        <h1>Welcome to the app, <% user.username %>!</h1>
+        <h1>Welcome to the app, <%=user.username %>!</h1>
+        <p>
+          <a href="/auth/sign-out">Sign Out</a>
+        </p>
     <% } else { %>
     <h1>Welcome to the app, guest.</h1>
     <a href="/auth/sign-up">Sign Up</a>
